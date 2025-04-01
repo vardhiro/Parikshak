@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parikshak</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Audiowide', cursive;
+        }
+        .btn {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-family: 'Press Start 2P', cursive;
+        }
+        .btn:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Parikshak</h1>
+    <button class="btn" onclick="createQuiz()">Create a Quiz</button>
+    <button class="btn" onclick="joinQuiz()">Join a Quiz</button>
+
+    <script>
+        function createQuiz() {
+            window.location.href = "create_quiz.php"; 
+        }
+        function joinQuiz() {
+            window.location.href = "join_quiz.php";
+        }
+    </script>
+</body>
+</html>
